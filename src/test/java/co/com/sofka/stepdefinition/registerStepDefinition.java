@@ -39,7 +39,7 @@ public class registerStepDefinition extends registerSetUp {
     public void el_usuario_realiza_la_peticion_de_registro() {
         try{
             response = resquest.when()
-                    .post(LOGIN_RESOURCE);
+                    .post(REGISTER_SOURCE);
         } catch (Exception e){
             LOGER.error(e.getMessage(), e);
             Assertions.fail(e.getMessage());

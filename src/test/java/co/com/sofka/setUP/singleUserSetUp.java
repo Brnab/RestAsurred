@@ -5,12 +5,13 @@ import org.apache.log4j.PropertyConfigurator;
 
 import static co.com.sofka.util.log4jValues.LOG4J_PROPERTIES_FILE_PATH;
 
-public class registerSetUp {
+public class singleUserSetUp {
     private static final String BASE_URI = "https://reqres.in";
     private static final String BASE_PATH = "/api";
-    protected static final String REGISTER_SOURCE = "/register";
+    protected static final String SINGLE_SOURCE = "/users/2";
 
     protected void generalSetUp(){
+
         setUpLog4j2();
         setUpBases();
     }
@@ -24,5 +25,4 @@ public class registerSetUp {
         RestAssured.basePath = BASE_PATH;
 
     }
-
 }
